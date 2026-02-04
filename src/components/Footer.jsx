@@ -80,19 +80,19 @@ export default function Footer() {
 
   return (
     <footer className="bg-white border-t border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
           
           {/* Brand & Mission */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-50 to-white rounded-xl flex items-center justify-center border border-blue-100 shadow-sm">
-                <span className="text-blue-700 text-lg font-bold">DL</span>
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-50 to-white rounded-xl flex items-center justify-center border border-blue-100 shadow-sm">
+                <span className="text-blue-700 text-xl font-bold">DL</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">David Luxx</h3>
+                <h3 className="text-2xl font-bold text-gray-900">David Luxx</h3>
                 <p className="text-blue-600 text-sm font-medium">Full-Stack Developer</p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${social.bgColor} ${social.color} p-2 rounded-lg transition-all duration-300 transform hover:scale-105`}
+                  className={`${social.bgColor} ${social.color} p-2.5 rounded-lg transition-all duration-300 transform hover:scale-105`}
                   aria-label={social.label}
                   title={social.label}
                 >
@@ -122,20 +122,20 @@ export default function Footer() {
 
           {/* Expertise Areas */}
           <div>
-            <h4 className="text-base font-semibold text-gray-900 mb-4 flex items-center">
+            <h4 className="text-lg font-semibold text-gray-900 mb-6 flex items-center">
               <FaCode className="text-blue-600 mr-2" />
               Expertise
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {expertiseAreas.map((area, idx) => (
                 <li 
                   key={idx} 
                   className="flex items-center space-x-3 group cursor-pointer transition-all duration-200"
                 >
-                  <div className="w-5 h-5 bg-blue-50 rounded flex items-center justify-center group-hover:bg-blue-100">
+                  <div className="w-6 h-6 bg-blue-50 rounded flex items-center justify-center group-hover:bg-blue-100">
                     {area.icon}
                   </div>
-                  <span className="text-gray-600 text-xs group-hover:text-blue-700 group-hover:translate-x-1 transition-all duration-200">
+                  <span className="text-gray-600 text-sm group-hover:text-blue-700 group-hover:translate-x-1 transition-all duration-200">
                     {area.name}
                   </span>
                 </li>
@@ -145,11 +145,11 @@ export default function Footer() {
 
           {/* Quick Navigation */}
           <div>
-            <h4 className="text-base font-semibold text-gray-900 mb-4 flex items-center">
+            <h4 className="text-lg font-semibold text-gray-900 mb-6 flex items-center">
               <FaArrowRight className="text-blue-600 mr-2" />
               Navigation
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {navigationLinks.map((link, idx) => (
                 <li key={idx}>
                   <Link 
@@ -168,14 +168,14 @@ export default function Footer() {
 
           {/* Contact Information */}
           <div className="space-y-6">
-            <h4 className="text-base font-semibold text-gray-900 mb-4 flex items-center">
+            <h4 className="text-lg font-semibold text-gray-900 mb-6 flex items-center">
               <FaEnvelope className="text-blue-600 mr-2" />
               Contact
             </h4>
             
             <div className="space-y-4">
               <div className="flex items-start space-x-3 group">
-                <div className="w-7 h-7 bg-blue-50 rounded flex items-center justify-center group-hover:bg-blue-100 transition-colors flex-shrink-0">
+                <div className="w-8 h-8 bg-blue-50 rounded flex items-center justify-center group-hover:bg-blue-100 transition-colors flex-shrink-0">
                   <FaEnvelope className="text-blue-600" />
                 </div>
                 <div>
@@ -190,7 +190,7 @@ export default function Footer() {
               </div>
               
               <div className="flex items-start space-x-3 group">
-                <div className="w-7 h-7 bg-blue-50 rounded flex items-center justify-center group-hover:bg-blue-100 transition-colors flex-shrink-0">
+                <div className="w-8 h-8 bg-blue-50 rounded flex items-center justify-center group-hover:bg-blue-100 transition-colors flex-shrink-0">
                   <FaPhone className="text-blue-600" />
                 </div>
                 <div>
@@ -205,7 +205,7 @@ export default function Footer() {
               </div>
               
               <div className="flex items-start space-x-3 group">
-                <div className="w-7 h-7 bg-blue-50 rounded flex items-center justify-center group-hover:bg-blue-100 transition-colors flex-shrink-0">
+                <div className="w-8 h-8 bg-blue-50 rounded flex items-center justify-center group-hover:bg-blue-100 transition-colors flex-shrink-0">
                   <FaMapMarkerAlt className="text-blue-600" />
                 </div>
                 <div>
@@ -217,10 +217,10 @@ export default function Footer() {
               </div>
               
               {/* Contact CTA */}
-              <div className="pt-4 border-t border-gray-100">
+              <div className="pt-6 border-t border-gray-100">
                 <Link 
                   to="/contact" 
-                  className="inline-flex items-center justify-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 shadow-sm hover:shadow w-full text-center group text-sm"
+                  className="inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 shadow-sm hover:shadow w-full text-center group"
                 >
                   Start a Project
                   <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
@@ -231,11 +231,11 @@ export default function Footer() {
         </div>
 
         {/* Divider & Bottom Section */}
-        <div className="border-t border-gray-100 pt-4">
+        <div className="border-t border-gray-100 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-center md:text-left">
-              <p className="text-gray-500 text-xs">
+              <p className="text-gray-500 text-sm">
                 © {currentYear} <span className="text-blue-700 font-medium">David Luxx Nizeyimana</span>
                 <span className="text-gray-400 ml-2">All rights reserved.</span>
               </p>
@@ -248,13 +248,13 @@ export default function Footer() {
             <div className="flex items-center space-x-6">
               <a 
                 href="/privacy" 
-                className="text-gray-500 hover:text-blue-700 transition-colors text-xs"
+                className="text-gray-500 hover:text-blue-700 transition-colors text-sm"
               >
                 Privacy Policy
               </a>
               <a 
                 href="/terms" 
-                className="text-gray-500 hover:text-blue-700 transition-colors text-xs"
+                className="text-gray-500 hover:text-blue-700 transition-colors text-sm"
               >
                 Terms of Service
               </a>
@@ -266,8 +266,8 @@ export default function Footer() {
           </div>
           
           {/* Motto & Identity */}
-          <div className="text-center mt-6 pt-4 border-t border-gray-100">
-            <p className="text-gray-600 text-xs italic mb-3">
+          <div className="text-center mt-8 pt-6 border-t border-gray-100">
+            <p className="text-gray-600 text-sm italic mb-4">
               "Building digital futures, inspiring human potential."
             </p>
             
@@ -289,7 +289,7 @@ export default function Footer() {
             </div>
             
             {/* Social Media Handles */}
-            <div className="mt-4 pt-4 border-t border-gray-100">
+            <div className="mt-6 pt-6 border-t border-gray-100">
               <p className="text-gray-500 text-xs mb-3">Connect with me:</p>
               <div className="flex flex-wrap justify-center gap-4 text-gray-600 text-xs">
                 <div className="flex items-center">

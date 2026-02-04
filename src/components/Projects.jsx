@@ -60,7 +60,7 @@ const Projects = () => {
   const filters = ["All", "Web Development", "Business Solutions"];
 
   return (
-    <section className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+    <section className=" pt-10 bg-gray-10 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
