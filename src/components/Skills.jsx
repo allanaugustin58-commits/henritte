@@ -70,24 +70,6 @@ export default function Skills() {
 
   const approachPoints = [];
 
-  const approachPoints = [
-    {
-      title: "Clean Code Architecture",
-      description: "Writing maintainable, scalable, and well-documented code following best practices and design patterns."
-    },
-    {
-      title: "User-Centered Design",
-      description: "Putting users first with intuitive interfaces, accessibility, and seamless user experiences."
-    },
-    {
-      title: "Performance Optimization",
-      description: "Building fast, efficient applications with optimized loading times and smooth interactions."
-    },
-    {
-      title: "Agile Development",
-      description: "Working iteratively with continuous feedback, adaptation, and rapid delivery of value."
-    }
-  ];
 
   return (
     <section className="py-20 px-4 sm:px-6 bg-gradient-to-b from-white to-gray-50 text-gray-800">
