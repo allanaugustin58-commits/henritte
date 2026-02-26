@@ -3,7 +3,6 @@ import {
   FaCode, 
   FaLaptopCode, 
   FaDatabase, 
-  FaArrowRight,
   FaPython,
   FaReact,
   FaNodeJs,
@@ -66,11 +65,29 @@ export default function Skills() {
   // otherSkills section removed as requested
   const otherSkills = [];
 
-  // learningPath section removed per user request
+  // learningPath and approachPoints removed per request
+  const learningPath = [];
 
+  const approachPoints = [];
 
-  // approachPoints section removed per user request
-
+  const approachPoints = [
+    {
+      title: "Clean Code Architecture",
+      description: "Writing maintainable, scalable, and well-documented code following best practices and design patterns."
+    },
+    {
+      title: "User-Centered Design",
+      description: "Putting users first with intuitive interfaces, accessibility, and seamless user experiences."
+    },
+    {
+      title: "Performance Optimization",
+      description: "Building fast, efficient applications with optimized loading times and smooth interactions."
+    },
+    {
+      title: "Agile Development",
+      description: "Working iteratively with continuous feedback, adaptation, and rapid delivery of value."
+    }
+  ];
 
   return (
     <section className="py-20 px-4 sm:px-6 bg-gradient-to-b from-white to-gray-50 text-gray-800">
@@ -123,27 +140,6 @@ export default function Skills() {
         </div>
 
 
-
-
-
-
-
-        {/* CTA Section */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto shadow-xl">
-            <h3 className="text-3xl font-bold text-white mb-4">Ready to Work Together?</h3>
-            <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-              Let's discuss how my skills can help you build something amazing.
-            </p>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 px-8 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
-            >
-              Get In Touch
-              <FaArrowRight />
-            </Link>
-          </div>
-        </div>
       </div>
     </section>
   );
