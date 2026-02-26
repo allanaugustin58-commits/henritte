@@ -1,4 +1,4 @@
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaPaperPlane, FaCalendarAlt, FaClock } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaInstagram, FaFacebook, FaPaperPlane, FaCalendarAlt, FaClock } from "react-icons/fa";
 import { MdConnectWithoutContact } from "react-icons/md";
 
 export default function Contact() {
@@ -6,36 +6,36 @@ export default function Contact() {
     {
       icon: <FaPhone />,
       title: "Phone",
-      info: "+250 782 575 191",
-      link: "tel:+250782575191",
+      info: "0737538600",
+      link: "tel:+250737538600",
       description: "Call or WhatsApp"
     },
     {
       icon: <FaEnvelope />,
       title: "Email",
-      info: "davidluxxnm@gmail.com",
-      link: "mailto:davidluxxnm@gmail.com",
+      info: "singizimanaaugustin23@gmail.com",
+      link: "mailto:singizimanaaugustin23@gmail.com",
       description: "Response within 24 hours"
     },
     {
       icon: <FaMapMarkerAlt />,
       title: "Location",
-      info: "Rubavu, Gisenyi – Rwanda",
-      link: "https://maps.google.com/?q=Rubavu+Rwanda",
-      description: "Available for remote work worldwide"
+      info: "Kigali, Rwanda",
+      link: "https://maps.google.com/?q=Kigali+Rwanda",
+      description: "Available for remote work"
     },
     {
       icon: <FaClock />,
-      title: "Availability",
+      title: "Working Hours",
       info: "Monday - Friday",
-      description: "9:00 AM - 6:00 PM CAT",
-      badge: "Available Now"
+      description: "9:00 AM - 6:00 PM",
+      badge: "Weekend by Appointment"
     }
   ];
 
   const socialLinks = [
-    { icon: <FaGithub />, name: "GitHub", link: "https://github.com/davidluxx", color: "hover:text-gray-800" },
-    { icon: <FaLinkedin />, name: "LinkedIn", link: "https://linkedin.com/in/davidluxx", color: "hover:text-blue-700" }
+    { icon: <FaInstagram />, name: "Instagram", link: "https://instagram.com/henriette.nii", color: "hover:text-pink-600" },
+    { icon: <FaFacebook />, name: "Facebook", link: "https://facebook.com/your-profile-link", color: "hover:text-blue-700" }
   ];
 
   return (
@@ -52,7 +52,7 @@ export default function Contact() {
             Get In <span className="text-blue-600">Touch</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
+            Feel free to reach out if you have any questions or would like to collaborate on a project. I'm always open to discussing new opportunities.
           </p>
         </div>
 
@@ -138,7 +138,7 @@ export default function Contact() {
                       type="text"
                       id="name"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-                      placeholder="username"
+                      placeholder="John Doe"
                     />
                   </div>
                   <div>
@@ -149,7 +149,7 @@ export default function Contact() {
                       type="email"
                       id="email"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-                      placeholder="username@example.com"
+                      placeholder="allan@example.com"
                     />
                   </div>
                 </div>
@@ -174,7 +174,7 @@ export default function Contact() {
                     id="message"
                     rows="5"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition resize-none"
-                    placeholder="Tell me about your project..."
+                    placeholder="I'd like to discuss a project..."
                   ></textarea>
                 </div>
                 
@@ -200,8 +200,8 @@ export default function Contact() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-end">
-              <a
-                href="mailto:davidluxxnm@gmail.com"
+            <a
+                href="mailto:henriettenishimwe269@gmail.com"
                 className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors flex items-center justify-center gap-2"
               >
                 <FaEnvelope />

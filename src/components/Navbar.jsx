@@ -7,8 +7,8 @@ import {
   FaEnvelope,
   FaBars,
   FaTimes,
-  FaLinkedin,
-  FaGithub,
+  FaFacebook,
+  FaInstagram,
   FaProjectDiagram,
   FaServer,
   FaLaptopCode,
@@ -35,23 +35,23 @@ export default function Navbar() {
   const navItems = [
     { path: "/", label: "Home", icon: FaHome },
     { path: "/about", label: "About", icon: FaUserTie },
+    { path: "/skills", label: "Skills", icon: FaCode },
     { path: "/projects", label: "Projects", icon: FaProjectDiagram },
-    { path: "/services", label: "Services", icon: FaServer },
     { path: "/contact", label: "Contact", icon: FaEnvelope },
   ];
 
   const socialLinks = [
     {
-      href: "https://linkedin.com/in/davidluxxnm",
-      icon: FaLinkedin,
-      label: "LinkedIn",
-      brandColor: "text-[#0077B5]",
+      href: "https://instagram.com/henriette.nii",
+      icon: FaInstagram,
+      label: "Instagram",
+      brandColor: "text-pink-500",
     },
     {
-      href: "https://github.com/davidluxxnm",
-      icon: FaGithub,
-      label: "GitHub",
-      brandColor: "text-[#333]",
+      href: "https://facebook.com/your-profile-link",
+      icon: FaFacebook,
+      label: "Facebook",
+      brandColor: "text-blue-600",
     },
   ];
 
@@ -91,10 +91,10 @@ export default function Navbar() {
               </div>
               <div className="hidden sm:block">
                 <h1 className="text-lg font-bold text-gray-900 tracking-tight">
-                  DAVID<span className="text-blue-600">LUXX</span>
+                  HENRIETTE <span className="text-blue-600">NISHIMWE</span>
                 </h1>
                 <p className="text-xs text-gray-500 -mt-0.5 font-medium">
-                  Full Stack Developer
+                  SWD Student
                 </p>
               </div>
             </Link>

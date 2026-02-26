@@ -1,37 +1,36 @@
 import React, { useState, useEffect } from "react";
-import snap from "../assets/snap.jpg";
 import { FaWhatsapp, FaPhone, FaEnvelope, FaChartLine, FaChevronDown } from "react-icons/fa";
 
 const Home = () => {
-  const whatsappNumber = "+250782575191";
-  const whatsappMessage = "Hello David! I saw your portfolio and would like to discuss a project.";
+  const whatsappNumber = "+250739148068";
+  const whatsappMessage = "Hello Henriette! I saw your portfolio and would like to discuss a project.";
   
   const [showContactPanel, setShowContactPanel] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   // Core skills with levels
   const coreSkills = [
-    { skill: "Business Analysis", level: "Advanced" },
-    { skill: "Web Development", level: "Expert" },
-    { skill: "System Design", level: "Advanced" },
-    { skill: "Project Management", level: "Good" },
-    { skill: "Database Design", level: "Advanced" },
-    { skill: "IT Solutions", level: "Expert" },
+    { skill: "HTML & CSS", level: "Advanced" },
+    { skill: "JavaScript", level: "Advanced" },
+    { skill: "React", level: "Intermediate" },
+    { skill: "Web Design", level: "Intermediate" },
+    { skill: "Responsive Design", level: "Advanced" },
+    { skill: "Problem Solving", level: "Advanced" },
   ];
 
   // Technical skills
   const technicalSkills = [
-    "HTML", "CSS", "JavaScript", "React", "Node.js",
-    "MongoDB", "SQL", "APIs", "Git", "Business Tools",
-    "Data Analysis", "Cloud Basics", "UI/UX",
+    "HTML", "CSS", "JavaScript", "React", "Responsive Design",
+    "Web Accessibility", "Git", "Version Control", "UI Design",
+    "Web Development", "Frontend", "Debugging",
   ];
 
   // Stats
   const stats = [
-    { label: "Projects Done", value: "25+" },
-    { label: "Years Experience", value: "3+" },
-    { label: "Happy Clients", value: "15+" },
-    { label: "Focus", value: "Business IT" },
+    { label: "Projects Done", value: "10+" },
+    { label: "Years Experience", value: "2+" },
+    { label: "Happy Clients", value: "8+" },
+    { label: "Focus", value: "Web Dev" },
   ];
 
   useEffect(() => {
@@ -77,27 +76,27 @@ const Home = () => {
 
             {/* Other Contact Options */}
             <div className="space-y-3">
-              <a 
-                href="tel:+250782575191" 
-                className="flex items-center gap-3 p-3 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition-colors"
-              >
-                <FaPhone className="text-blue-600" />
-                <div>
-                  <p className="font-medium">Call Now</p>
-                  <p className="text-sm">+250 782 575 191</p>
-                </div>
-              </a>
+            <a 
+              href="tel:+250739148068" 
+              className="flex items-center gap-3 p-3 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition-colors"
+            >
+              <FaPhone className="text-blue-600" />
+              <div>
+                <p className="font-medium">Call Now</p>
+                <p className="text-sm">+250 739 148 068</p>
+              </div>
+            </a>
               
-              <a 
-                href="mailto:davidluxxnm@gmail.com" 
-                className="flex items-center gap-3 p-3 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition-colors"
-              >
-                <FaEnvelope className="text-blue-600" />
-                <div>
-                  <p className="font-medium">Send Email</p>
-                  <p className="text-sm">davidluxxnm@gmail.com</p>
-                </div>
-              </a>
+            <a 
+              href="mailto:henriettenishimwe269@gmail.com" 
+              className="flex items-center gap-3 p-3 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition-colors"
+            >
+              <FaEnvelope className="text-blue-600" />
+              <div>
+                <p className="font-medium">Send Email</p>
+                <p className="text-sm">henriettenishimwe269@gmail.com</p>
+              </div>
+            </a>
             </div>
 
             <div className="mt-4 pt-4 border-t border-gray-100">
@@ -132,8 +131,8 @@ const Home = () => {
             <div className="relative">
               <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-blue-50 shadow-xl">
                 <img
-                  src={snap}
-                  alt="David Luxx Nizeyimana"
+                  src="https://scontent.fkgl4-2.fna.fbcdn.net/v/t39.30808-6/551048854_122263010312166277_6775171718350126840_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEeF3R6KAGpHm6AztfQlEqy8CnvizgHp9HwKe-LOAen0T-cCyXdgbiFEPj5ZpvU67EdE9LZxwG9G_T6jcn5_YeU&_nc_ohc=k7r-dSlSPW4Q7kNvwEMKxKg&_nc_oc=AdljR126vZd4YbtwPYQx-RXe8huwlZPlM5XhjL_So3WsxezdtzkhHJ9rz0jn2FpbQoj9G3e-ntYA9K0VoVgueXNx&_nc_zt=23&_nc_ht=scontent.fkgl4-2.fna&_nc_gid=cDGqC1YIHeVhcnSUfvPCXA&oh=00_AfsPDIZFzKzmK-LPeMVbWLafK7aByBuAfr4q7NL7zz04Zg&oe=69A64187"
+                  alt="Henriette Nishimwe"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -149,24 +148,24 @@ const Home = () => {
             </span>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">
-              David Luxx <span className="text-blue-700">Nizeyimana</span>
+              Henriette <span className="text-blue-700">Nishimwe</span>
             </h1>
 
             <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800">
-              Business IT Professional
+              SWD Student
             </h2>
             <p className="text-blue-600 font-medium mb-6">
-              Full-Stack Developer & IT Solutions
+              software develop & Web Developer
             </p>
 
             <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-              I build web applications that help businesses grow by aligning
-              technical solutions with real business needs.
+              I'm a passionate web developer studying Software Development, creating beautiful 
+              and functional web applications that provide great user experiences.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              With experience in both business and IT, I design systems that are
-              reliable, scalable, and focused on measurable results.
+              With a focus on clean code and responsive design, I build modern websites 
+              that work seamlessly across all devices.
             </p>
           </div>
         </div>

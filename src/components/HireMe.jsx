@@ -52,7 +52,7 @@ export default function HireMe() {
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=2070&q=80')",
+          backgroundImage: "url('')",
         }}
       >
         <div className="absolute inset-0 bg-white/30 backdrop-brightness-110"></div>

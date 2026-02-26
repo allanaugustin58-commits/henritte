@@ -1,5 +1,4 @@
 import React from "react";
-import snap from "../assets/snap.jpg"; // Your profile image
 import { 
   FaUser, 
   FaBriefcase, 
@@ -9,12 +8,12 @@ import {
   FaCertificate,
   FaMapMarkerAlt,
   FaCalendarAlt,
-  FaUsers,
+  FaHeartbeat,
   FaProjectDiagram,
   FaArrowRight,
   FaDownload,
   FaEnvelope,
-  FaGlobeAfrica
+  FaBook
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -31,51 +30,51 @@ export default function About() {
 
   const careerTimeline = [
     {
-      year: "2020",
-      title: "Started Professional Journey in Rwanda",
-      description: "Began freelance development for local Rwandan businesses and startups",
-      icon: "🇷🇼"
+      year: "High School",
+      title: "Student at Kigali Institution",
+      description: "Developed early interest in technology and coding through computer science curriculum",
+      icon: "📚"
     },
     {
-      year: "2021",
-      title: "East African Business IT Focus",
-      description: "Expanded to serving businesses across East Africa with custom web solutions",
-      icon: "🌍"
-    },
-    {
-      year: "2022",
-      title: "Full-Stack Expertise for African Markets",
-      description: "Developed solutions specifically for African business environments and challenges",
+      year: "College",
+      title: "Started Software Development Program",
+      description: "Pursuing SWD degree and learning modern web development technologies",
       icon: "💻"
     },
     {
-      year: "2023-Present",
-      title: "Pan-African Technology Partner",
-      description: "Partnering with businesses across Africa for digital transformation and growth",
-      icon: "🤝"
+      year: "Projects",
+      title: "Building Portfolio Projects",
+      description: "Creating responsive web applications and demonstrating technical skills",
+      icon: "🏗️"
+    },
+    {
+      year: "Future",
+      title: "Professional Web Developer",
+      description: "Ready to contribute and grow in the tech industry with passion and dedication",
+      icon: "🚀"
     }
   ];
 
   const coreValues = [
     {
-      title: "African Business Understanding",
-      description: "Deep knowledge of local markets, challenges, and opportunities across Africa",
-      icon: "🎯"
+      title: "Continuous Learning",
+      description: "Always eager to learn new technologies and improve coding skills",
+      icon: "📖"
     },
     {
-      title: "Context-Aware Solutions",
-      description: "Technology solutions designed for African infrastructure and business environments",
-      icon: "🌍"
+      title: "Creative Solutions",
+      description: "Problem-solving with innovative and elegant code designs",
+      icon: "💡"
     },
     {
-      title: "Client Partnership",
-      description: "Working collaboratively with African entrepreneurs and businesses for shared success",
-      icon: "🤝"
+      title: "User-Centered Design",
+      description: "Building websites that are intuitive and enjoyable to use",
+      icon: "👥"
     },
     {
-      title: "Sustainable Growth",
-      description: "Building solutions that support long-term business growth in African markets",
-      icon: "📈"
+      title: "Code Quality",
+      description: "Writing clean, maintainable, and well-documented code",
+      icon: "✨"
     }
   ];
 
@@ -90,8 +89,8 @@ export default function About() {
             <div className="relative order-2 lg:order-1 flex justify-center">
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <img
-                  src={snap}
-                  alt="David Luxx Nizeyimana"
+                  src="https://scontent.fkgl4-2.fna.fbcdn.net/v/t39.30808-6/551048854_122263010312166277_6775171718350126840_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEeF3R6KAGpHm6AztfQlEqy8CnvizgHp9HwKe-LOAen0T-cCyXdgbiFEPj5ZpvU67EdE9LZxwG9G_T6jcn5_YeU&_nc_ohc=k7r-dSlSPW4Q7kNvwEMKxKg&_nc_oc=AdljR126vZd4YbtwPYQx-RXe8huwlZPlM5XhjL_So3WsxezdtzkhHJ9rz0jn2FpbQoj9G3e-ntYA9K0VoVgueXNx&_nc_zt=23&_nc_ht=scontent.fkgl4-2.fna&_nc_gid=cDGqC1YIHeVhcnSUfvPCXA&oh=00_AfsPDIZFzKzmK-LPeMVbWLafK7aByBuAfr4q7NL7zz04Zg&oe=69A64187"
+                  alt="Henriette Nishimwe"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -99,35 +98,35 @@ export default function About() {
 
             {/* Introduction */}
             <div className="order-1 lg:order-2">
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-green-50 to-blue-50 text-gray-800 font-medium mb-8 border border-green-100">
-                <FaGlobeAfrica className="text-green-600 mr-2" />
-                AFRICAN BUSINESS TECHNOLOGY EXPERT
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-purple-50 text-gray-800 font-medium mb-8 border border-blue-100">
+                <FaBook className="text-blue-600 mr-2" />
+                WEB DEVELOPER & SWD STUDENT
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Building Digital
+                Henriette
                 <br />
-                <span className="text-blue-600">Africa</span>
+                <span className="text-blue-600">Nishimwe</span>
               </h1>
               
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-8">
-                Technology solutions designed for African businesses and markets
+                Passionate Web Developer from Rwanda
               </h2>
               
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                As an African Business IT Professional, I specialize in creating technology 
-                solutions that understand and address the unique challenges and opportunities 
-                of doing business in Africa.
+                I'm a dedicated student pursuing Software Development with a passion for creating 
+                beautiful, functional web applications. Based in Kigali, Rwanda, I'm committed to building 
+                responsive and user-friendly digital experiences.
               </p>
 
               {/* Quick Stats */}
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
                   <div className="flex items-center">
-                    <FaCalendarAlt className="text-blue-600 mr-3" />
+                    <FaBook className="text-blue-600 mr-3" />
                     <div>
-                      <div className="text-2xl font-bold text-blue-700">4+</div>
-                      <div className="text-sm text-gray-600">Years in African Tech</div>
+                      <div className="text-2xl font-bold text-blue-700">SWD</div>
+                      <div className="text-sm text-gray-600">Student</div>
                     </div>
                   </div>
                 </div>
@@ -135,8 +134,8 @@ export default function About() {
                   <div className="flex items-center">
                     <FaProjectDiagram className="text-blue-600 mr-3" />
                     <div>
-                      <div className="text-2xl font-bold text-blue-700">50+</div>
-                      <div className="text-sm text-gray-600">African Projects</div>
+                      <div className="text-2xl font-bold text-blue-700">10+</div>
+                      <div className="text-sm text-gray-600">Projects</div>
                     </div>
                   </div>
                 </div>
@@ -152,20 +151,20 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              My African <span className="text-blue-600">Journey</span>
+              My Educational <span className="text-blue-600">Journey</span>
             </h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              From Rwandan entrepreneur to technology partner for businesses across Africa
+              From student to aspiring professional developer in Rwanda
             </p>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Career Timeline */}
             <div className="space-y-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
-                <FaBriefcase className="text-blue-600 mr-3" />
-                African Career Timeline
-              </h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+              <FaGraduationCap className="text-blue-600 mr-3" />
+              My Path to Development
+            </h3>
               
               <div className="relative">
                 <div className="absolute left-6 h-full w-0.5 bg-gradient-to-b from-green-300 via-yellow-400 to-red-500"></div>
@@ -192,8 +191,8 @@ export default function About() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src={africanImages.workSetup}
-                  alt="African tech workspace and environment"
+                  src="https://scontent.fkgl4-2.fna.fbcdn.net/v/t39.30808-6/551048854_122263010312166277_6775171718350126840_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEeF3R6KAGpHm6AztfQlEqy8CnvizgHp9HwKe-LOAen0T-cCyXdgbiFEPj5ZpvU67EdE9LZxwG9G_T6jcn5_YeU&_nc_ohc=k7r-dSlSPW4Q7kNvwEMKxKg&_nc_oc=AdljR126vZd4YbtwPYQx-RXe8huwlZPlM5XhjL_So3WsxezdtzkhHJ9rz0jn2FpbQoj9G3e-ntYA9K0VoVgueXNx&_nc_zt=23&_nc_ht=scontent.fkgl4-2.fna&_nc_gid=cDGqC1YIHeVhcnSUfvPCXA&oh=00_AfsPDIZFzKzmK-LPeMVbWLafK7aByBuAfr4q7NL7zz04Zg&oe=69A64187"
+                  alt="Web development workspace"
                   className="w-full h-64 md:h-80 object-cover"
                   loading="lazy"
                 />

@@ -42,38 +42,17 @@ export default function Footer() {
   // Social links with actual profiles
   const socialLinks = [
     { 
-      href: "https://github.com/davidluxxnm", 
-      icon: <FaGithub />, 
-      label: "GitHub",
-      color: "hover:bg-gray-900 hover:text-white",
-      bgColor: "bg-gray-100 text-gray-700"
-    },
-    { 
-      href: "https://linkedin.com/in/davidluxxnm", 
-      icon: <FaLinkedin />, 
-      label: "LinkedIn",
-      color: "hover:bg-[#0077B5] hover:text-white",
-      bgColor: "bg-gray-100 text-gray-700"
-    },
-    { 
-      href: "https://youtube.com/@bwebwe_entertainment", 
-      icon: <FaYoutube />, 
-      label: "YouTube",
-      color: "hover:bg-[#FF0000] hover:text-white",
-      bgColor: "bg-gray-100 text-gray-700"
-    },
-    { 
-      href: "https://facebook.com/david.luxx.nm", 
-      icon: <FaFacebook />, 
-      label: "Facebook",
-      color: "hover:bg-[#1877F2] hover:text-white",
-      bgColor: "bg-gray-100 text-gray-700"
-    },
-    { 
-      href: "https://instagram.com/david_luxx_nm", 
+      href: "https://instagram.com/henriette.nii", 
       icon: <FaInstagram />, 
       label: "Instagram",
       color: "hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white",
+      bgColor: "bg-gray-100 text-gray-700"
+    },
+    { 
+      href: "https://facebook.com/your-profile-link", 
+      icon: <FaFacebook />, 
+      label: "Facebook",
+      color: "hover:bg-[#1877F2] hover:text-white",
       bgColor: "bg-gray-100 text-gray-700"
     },
   ];
@@ -89,17 +68,17 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-50 to-white rounded-xl flex items-center justify-center border border-blue-100 shadow-sm">
-                <span className="text-blue-700 text-xl font-bold">DL</span>
+                <span className="text-blue-700 text-xl font-bold">HN</span>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900">David Luxx</h3>
-                <p className="text-blue-600 text-sm font-medium">Full-Stack Developer</p>
+                <h3 className="text-2xl font-bold text-gray-900">Henriette Nishimwe</h3>
+                <p className="text-blue-600 text-sm font-medium">Web Developer / SWD Student</p>
               </div>
             </div>
             
             <p className="text-gray-600 text-sm leading-relaxed">
-              Building scalable digital solutions and inspiring the next generation of developers 
-              from Rwanda. Combining technical expertise with business acumen.
+              Passionate web developer and SWD student from Rwanda. Building beautiful, responsive 
+              web applications and contributing to the tech community in East Africa.
             </p>
             
             {/* Social Links */}
@@ -124,7 +103,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-gray-900 mb-6 flex items-center">
               <FaCode className="text-blue-600 mr-2" />
-              Expertise
+              Skills & Tools
             </h4>
             <ul className="space-y-3">
               {expertiseAreas.map((area, idx) => (
@@ -180,10 +159,10 @@ export default function Footer() {
                 </div>
                 <div>
                   <a 
-                    href="mailto:davidluxxnm@gmail.com" 
+                    href="mailto:henriettenishimwe269@gmail.com" 
                     className="text-gray-600 hover:text-blue-700 transition-colors text-sm block"
                   >
-                    davidluxxnm@gmail.com
+                    henriettenishimwe269@gmail.com
                   </a>
                   <p className="text-gray-400 text-xs mt-1">Primary contact</p>
                 </div>
@@ -210,9 +189,9 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-gray-600 text-sm">
-                    Rubavu, Gisenyi
+                    Kigali, Rwanda
                   </p>
-                  <p className="text-gray-400 text-xs mt-1">Rwanda • East Africa</p>
+                  <p className="text-gray-400 text-xs mt-1">East Africa</p>
                 </div>
               </div>
               
@@ -236,11 +215,11 @@ export default function Footer() {
             {/* Copyright */}
             <div className="text-center md:text-left">
               <p className="text-gray-500 text-sm">
-                © {currentYear} <span className="text-blue-700 font-medium">David Luxx Nizeyimana</span>
+                © {currentYear} <span className="text-blue-700 font-medium">Henriette Nishimwe</span>
                 <span className="text-gray-400 ml-2">All rights reserved.</span>
               </p>
               <p className="text-gray-400 text-xs mt-1">
-                Kigali, Rwanda • VAT: RW-123456789
+                Kigali, Rwanda
               </p>
             </div>
             
@@ -293,16 +272,12 @@ export default function Footer() {
               <p className="text-gray-500 text-xs mb-3">Connect with me:</p>
               <div className="flex flex-wrap justify-center gap-4 text-gray-600 text-xs">
                 <div className="flex items-center">
-                  <FaYoutube className="text-red-500 mr-1" />
-                  <span>@bwebwe_entertainment</span>
-                </div>
-                <div className="flex items-center">
                   <FaFacebook className="text-blue-600 mr-1" />
-                  <span>david.luxx.nm</span>
+                  <span>Henriette Nishimwe</span>
                 </div>
                 <div className="flex items-center">
                   <FaInstagram className="text-pink-500 mr-1" />
-                  <span>david_luxx_nm</span>
+                  <span>@henriette.nii</span>
                 </div>
               </div>
             </div>
