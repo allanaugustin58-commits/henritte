@@ -70,8 +70,8 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 z-50 w-full transition-all duration-300 ${
           hasScrolled
-            ? "bg-white/95 backdrop-blur-xl shadow-lg border-b border-blue-100"
-            : "bg-white border-b border-blue-50"
+            ? "bg-blue-700 shadow-lg"
+            : "bg-blue-600"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -90,10 +90,10 @@ export default function Navbar() {
                 <span className="absolute -top-1 -right-1 w-2 h-2 lg:w-2.5 lg:h-2.5 bg-blue-500 rounded-full animate-pulse" />
               </div>
               <div className="hidden sm:block">
-                <h1 className="text-lg font-bold text-gray-900 tracking-tight">
-                  HENRIETTE <span className="text-blue-600">NISHIMWE</span>
+                <h1 className="text-lg font-bold text-white tracking-tight">
+                  HENRIETTE <span className="text-yellow-300">NISHIMWE</span>
                 </h1>
-                <p className="text-xs text-gray-500 -mt-0.5 font-medium">
+                <p className="text-xs text-blue-200 -mt-0.5 font-medium">
                   SWD Student
                 </p>
               </div>
@@ -111,23 +111,23 @@ export default function Navbar() {
                         className={`group relative flex items-center gap-2 px-4 py-2.5 rounded-lg transition-all duration-200
                           ${
                             active
-                              ? "text-blue-700 bg-blue-50 font-semibold"
-                              : "text-gray-600 hover:text-blue-600 hover:bg-blue-50/50"
+                              ? "text-white bg-blue-500 font-semibold"
+                              : "text-white hover:bg-blue-500/50"
                           }`}
                         aria-current={active ? "page" : undefined}
                       >
                         <Icon
                           className={`transition-transform duration-200 ${
                             active
-                              ? "scale-110 text-blue-600"
-                              : "text-gray-500 group-hover:text-blue-500 group-hover:scale-110"
+                              ? "scale-110 text-white"
+                              : "text-white group-hover:scale-110"
                           }`}
                         />
                         <span className="font-medium">{label}</span>
 
                         {/* Active indicator */}
                         {active && (
-                          <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-4 h-1 bg-blue-600 rounded-full" />
+                          <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-4 h-1 bg-yellow-300 rounded-full" />
                         )}
                       </Link>
                     </li>
@@ -144,7 +144,7 @@ export default function Navbar() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className={`p-2 rounded-lg bg-gray-50 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-all duration-200 hover:scale-110 hover:shadow-sm`}
+                    className={`p-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition-all duration-200 hover:scale-110 hover:shadow-sm`}
                   >
                     <Icon className={`${brandColor}`} />
                   </a>
@@ -162,7 +162,7 @@ export default function Navbar() {
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden p-2 rounded-lg text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="lg:hidden p-2 rounded-lg text-white hover:text-blue-200 hover:bg-blue-500 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
               aria-expanded={isMenuOpen}
               aria-label="Toggle navigation menu"
             >
@@ -184,7 +184,7 @@ export default function Navbar() {
             role="menu"
             aria-hidden={!isMenuOpen}
           >
-            <div className="bg-white shadow-xl rounded-b-xl border border-gray-100 mt-2 py-2">
+            <div className="bg-blue-600 shadow-xl rounded-b-xl border border-blue-700 mt-2 py-2">
               {navItems.map(({ path, label, icon: Icon }) => {
                 const active = isActive(path);
                 return (
@@ -195,17 +195,16 @@ export default function Navbar() {
                     className={`flex items-center justify-between px-6 py-3.5 transition-colors duration-150
                       ${
                         active
-                          ? "text-blue-700 bg-blue-50 border-l-4 border-blue-600 font-semibold"
-                          : "text-gray-700 hover:bg-gray-50"
+                          ? "text-white bg-blue-500 border-l-4 border-yellow-300 font-semibold"
+                          : "text-white hover:bg-blue-500/25"
                       }`}
                     role="menuitem"
                     aria-current={active ? "page" : undefined}
                   >
                     <div className="flex items-center gap-4">
                       <Icon
-                        className={`${active ? "text-blue-600" : "text-gray-500"}`}
-                      />
-                      <span className="font-medium">{label}</span>
+                        className={`${active ? "text-white" : "text-white"}`}
+                      />                      <span className="font-medium">{label}</span>
                     </div>
                     {active && (
                       <div className="w-2 h-2 bg-blue-600 rounded-full" />

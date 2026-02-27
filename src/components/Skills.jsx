@@ -7,7 +7,8 @@ import {
   FaReact,
   FaNodeJs,
   FaServer,
-  FaWifi
+  FaWifi,
+  FaCogs
 } from "react-icons/fa";
 import { 
   SiTypescript, 
